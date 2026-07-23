@@ -1,7 +1,28 @@
 aid: apex-space
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/apex-space.png
 name: Apex Space
-description: Apex Space is a company surfaced as a portfolio company of a16z and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Apex Space (Apex) is a Los Angeles based satellite manufacturing company that builds
+  productized, configurable spacecraft bus platforms for proliferated constellations across
+  LEO, MEO, and GEO orbital regimes. Apex offers three product lines: Aries (small satellites
+  up to 150 kg payload), Nova (medium satellites up to 300 kg payload), and Comet (large
+  satellites up to 3,000 kg payload), and operates Factory One, a high-rate manufacturing
+  facility in Los Angeles with the capacity to produce more than 200 satellites annually.
+  The company was surfaced as a portfolio company of a16z and added to the API Evangelist
+  network. Apex does not currently publish a public API, developer portal, or developer
+  documentation; customers configure satellite platforms through the on-site Configurator and
+  direct sales inquiries.
 url: https://raw.githubusercontent.com/api-evangelist/apex-space/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -14,9 +35,24 @@ created: '2026-07-17'
 modified: '2026-07-17'
 tags:
 - Company
+- Space
+- Satellites
+- Aerospace
+- Manufacturing
+- Hardware
 apis: []
+common:
+- type: DomainSecurity
+  url: security/apex-space-domain-security.yml
+- type: Website
+  url: https://www.apexspace.com/
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
